@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_dHmh4LwvEeOXP_hHABdnOg" name="DataOperation"/>
+    <routinesParameter id="_dHzWMLwvEeOXP_hHABdnOg" name="Mathematical"/>
+    <routinesParameter id="_dH41wLwvEeOXP_hHABdnOg" name="Numeric"/>
+    <routinesParameter id="_dH8gILwvEeOXP_hHABdnOg" name="Relational"/>
+    <routinesParameter id="_dIAxkLwvEeOXP_hHABdnOg" name="StringHandling"/>
+    <routinesParameter id="_dIGRILwvEeOXP_hHABdnOg" name="TalendDataGenerator"/>
+    <routinesParameter id="_dILJoLwvEeOXP_hHABdnOg" name="TalendDate"/>
+    <routinesParameter id="_dIQpMLwvEeOXP_hHABdnOg" name="TalendString"/>
+  </parameters>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://cs7.salesforce.com/services/Soap/u/23.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;25.0&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mike.measel@fieldaware.com.dev&quot;"/>
+    <elementParameter field="TEXT" name="PASS" value="&quot;blue27OdayYOKlf85ZvVPRed8fnqciNRs2&quot;"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_SECRET" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/talendProjects/token.properties&quot;"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60000"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="Account"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_oNOSoMDpEeOOaqNtHRdzpA - Account"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="false"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;select FirstName, LastName from Contact&quot;"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="250"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PASSWORD" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="false"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Account"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="Account" name="tSalesforceInput_1">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Type" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Fax" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Website" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Sic" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Industry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="AnnualRevenue" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NumberOfEmployees" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32000" name="Description" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="OwnerId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SystemModstamp" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastActivityDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Jigsaw" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="JigsawCompanyId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Trial_Activation_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Try_Buy_Activation_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Production_Activation_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Lead_Created_On__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Current_Method__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Devices_Notes__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Pain_to_Solve__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Decision_Makers__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Service_Industry_Details__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Invoicing_Status__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Average_Number_of_Work_Orders__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Hours_of_Operation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Mobile_Devices__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Time_Zone__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Accounting_Package_ver__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Data_import_needed__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_service_techs__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_Customers__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_Products__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_currently_defined_tasks__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_back_office_staff__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Invoicing_started__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Purchase_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_1_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_2_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_3_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_4_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_1_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_2_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_3_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_4_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_city__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_state__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_street__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Billing_zip__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FA_Admin_username__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FA_Admin_password__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_type__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Admin_contact_name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Assigned_To__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="At_risk__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Intro_Email_Sent__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_Status__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="Admin_contact_email__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="Admin_contact_phone__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Activation_start_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Budget__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Trial_target_end_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Referrer_First_Name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Trial_actual_end_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="x_Report_Days_to_Stage4__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="2056" name="Reference_Testimonial_Text__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Referenceable_Account__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Reference_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2056" name="Reference_History__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Competitors__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Other_competitors__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Features_important_to_you__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SE__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="OB_Risk_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Other_important_features__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OB_Risk__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Timeframe__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Will_you_consder_upgrading__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Reference_Comments__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Scheduled_Date_Time__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Referrer_Last_Name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Lost_Customer__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Reason_for_Lost__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Referrer_Phone__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="Success_Criteria__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="Barriers__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="of_Users_Purchased__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_Status_Trial__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_Status_PPOC__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Try_Buy_Target_End_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Try_Buy_Actual_End_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Customer_Health_Check_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Customer_Health_Status__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="C_S_Owner__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Customer_Health_Summary__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="At_Risk_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="On_Hold__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="On_Hold_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Pay_by_Credit_Card__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_Total__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_no_device__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_iPhone__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_iPad__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_Android__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Invoicing_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Contract_Length__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_Android_Tablet__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="LeadSource__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="External_Web_Source__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Mktg_Qualified_By__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mktg_Qualified_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Mktg_Qualified_Result__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Sales_Qualified_By__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Sales_Qualified_Result__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Sales_Qualified_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Demo_Set_For__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Fleet_Size__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Referrer_Email__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="FA_Referral_Source__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Sales_Process_Result__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Lead_Category__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contract_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_2nd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_3rd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_4th_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_5th_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Demo_Qualification__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Demo_Unqualified_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Family__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Save_List__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Saved_Account__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__AutoCreateContactsFromDatahug__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="datahugapps__Domain__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="datahugapps__HugRank__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="32768" name="sk_Biggest_Challenges__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__LastDatahugSyncDate__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__LastInteractedDate__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="sk_Buying_Group_Full_Name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__LastInteraction__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__Last_Inbound_Interaction__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__Last_Outbound_Interaction__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__Next_Meeting__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="datahugapps__NumberOfColleagues__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="datahugapps__NumberOfContacts__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="datahugapps__NumberofLocations__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="OB__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sk_Lennox_Dealer_Number__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="sk_Lennox_Dealer__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="sk_Tech_Training__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="qbdialer__Dials__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="qbdialer__LastCallTime__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="qbdialer__ResponseTime__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysToOnBoard__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Channel_Program__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage1__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage2__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage3__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage4__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Collections__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Didn_t_Renew__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="City_State__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Web_Form_Completed__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Days_Since_Activation__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Scheduled_2nd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Address_Same_As_Above__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Invoice_Status_Change__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Scheduled_3rd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsDeleted"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MasterRecordId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fax"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sic"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AnnualRevenue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumberOfEmployees"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OwnerId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SystemModstamp"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastActivityDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Jigsaw"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JigsawCompanyId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trial_Activation_Start_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Try_Buy_Activation_Start_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Production_Activation_Start_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lead_Created_On__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Delivered__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Current_Method__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Devices_Notes__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pain_to_Solve__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Decision_Makers__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Industry_Details__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoicing_Status__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Number_of_Work_Orders__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hours_of_Operation__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mobile_Devices__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_Zone__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Accounting_Package_ver__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_import_needed__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_service_techs__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_Customers__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_Products__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_currently_defined_tasks__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_back_office_staff__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoicing_started__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_Purchase_date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Target_Stage_1_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Target_Stage_2_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Target_Stage_3_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Target_Stage_4_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Actual_Stage_1_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Actual_Stage_2_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Actual_Stage_3_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Actual_Stage_4_complete__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_name__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_city__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_state__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_street__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_zip__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Admin_username__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Admin_password__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activation_type__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Admin_contact_name__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Assigned_To__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="At_risk__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Intro_Email_Sent__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activation_Status__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Admin_contact_email__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Admin_contact_phone__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activation_start_date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Budget__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trial_target_end_date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Referrer_First_Name__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trial_actual_end_date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="x_Report_Days_to_Stage4__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reference_Testimonial_Text__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Referenceable_Account__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Reference_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reference_History__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Competitors__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_competitors__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Features_important_to_you__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SE__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OB_Risk_Reason__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_important_features__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OB_Risk__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Timeframe__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Will_you_consder_upgrading__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reference_Comments__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Scheduled_Date_Time__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Referrer_Last_Name__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lost_Customer__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reason_for_Lost__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Referrer_Phone__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Success_Criteria__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Barriers__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="of_Users_Purchased__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activation_Status_Trial__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activation_Status_PPOC__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Try_Buy_Target_End_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Try_Buy_Actual_End_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Health_Check_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Health_Status__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_S_Owner__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Health_Summary__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="At_Risk_Reason__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="On_Hold__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="On_Hold_Reason__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pay_by_Credit_Card__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Users_Total__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Users_no_device__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Users_iPhone__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Users_iPad__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Users_Android__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoicing_Start_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contract_Length__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Users_Android_Tablet__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LeadSource__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="External_Web_Source__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mktg_Qualified_By__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mktg_Qualified_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mktg_Qualified_Result__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sales_Qualified_By__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sales_Qualified_Result__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sales_Qualified_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Set_For__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fleet_Size__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Referrer_Email__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FA_Referral_Source__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sales_Process_Result__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lead_Category__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contract_Start_Date__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Delivered_2nd_D_T__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Delivered_3rd_D_T__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Delivered_4th_D_T__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Delivered_5th_D_T__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Qualification__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Unqualified_Reason__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Family__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Save_List__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Saved_Account__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__AutoCreateContactsFromDatahug__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__Domain__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__HugRank__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sk_Biggest_Challenges__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__LastDatahugSyncDate__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__LastInteractedDate__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sk_Buying_Group_Full_Name__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__LastInteraction__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__Last_Inbound_Interaction__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__Last_Outbound_Interaction__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__Next_Meeting__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__NumberOfColleagues__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__NumberOfContacts__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datahugapps__NumberofLocations__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OB__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sk_Lennox_Dealer_Number__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sk_Lennox_Dealer__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sk_Tech_Training__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qbdialer__Dials__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qbdialer__LastCallTime__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qbdialer__ResponseTime__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysToOnBoard__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Channel_Program__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysInStage1__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysInStage2__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysInStage3__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysInStage4__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Collections__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Didn_t_Renew__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City_State__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Web_Form_Completed__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Days_Since_Activation__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Scheduled_2nd_D_T__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address_Same_As_Above__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Invoice_Status_Change__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demo_Scheduled_3rd_D_T__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="Account" name="tLogRow_2">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Type" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Fax" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Website" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Sic" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Industry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="AnnualRevenue" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NumberOfEmployees" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32000" name="Description" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="OwnerId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SystemModstamp" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastActivityDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Jigsaw" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="JigsawCompanyId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Trial_Activation_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Try_Buy_Activation_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Production_Activation_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Lead_Created_On__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Current_Method__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Devices_Notes__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Pain_to_Solve__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Decision_Makers__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Service_Industry_Details__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Invoicing_Status__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Average_Number_of_Work_Orders__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Hours_of_Operation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Mobile_Devices__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Time_Zone__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Accounting_Package_ver__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Data_import_needed__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_service_techs__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_Customers__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_Products__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_currently_defined_tasks__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Num_back_office_staff__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Invoicing_started__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Purchase_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_1_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_2_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_3_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Target_Stage_4_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_1_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_2_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_3_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Stage_4_complete__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_city__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_state__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Billing_street__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Billing_zip__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FA_Admin_username__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FA_Admin_password__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_type__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Admin_contact_name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Assigned_To__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="At_risk__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Intro_Email_Sent__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_Status__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="Admin_contact_email__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="Admin_contact_phone__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Activation_start_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Budget__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Trial_target_end_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Referrer_First_Name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Trial_actual_end_date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="x_Report_Days_to_Stage4__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="2056" name="Reference_Testimonial_Text__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Referenceable_Account__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Reference_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2056" name="Reference_History__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Competitors__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Other_competitors__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4099" name="Features_important_to_you__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SE__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="OB_Risk_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Other_important_features__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OB_Risk__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Timeframe__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Will_you_consder_upgrading__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Reference_Comments__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Scheduled_Date_Time__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Referrer_Last_Name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Lost_Customer__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Reason_for_Lost__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Referrer_Phone__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="Success_Criteria__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="Barriers__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="of_Users_Purchased__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_Status_Trial__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Activation_Status_PPOC__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Try_Buy_Target_End_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Try_Buy_Actual_End_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Customer_Health_Check_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Customer_Health_Status__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="C_S_Owner__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Customer_Health_Summary__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="At_Risk_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="On_Hold__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="On_Hold_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Pay_by_Credit_Card__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_Total__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_no_device__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_iPhone__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_iPad__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_Android__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Invoicing_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Contract_Length__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="FA_Users_Android_Tablet__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="LeadSource__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="External_Web_Source__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Mktg_Qualified_By__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mktg_Qualified_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Mktg_Qualified_Result__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Sales_Qualified_By__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Sales_Qualified_Result__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Sales_Qualified_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Demo_Set_For__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Fleet_Size__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Referrer_Email__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="FA_Referral_Source__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Sales_Process_Result__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Lead_Category__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contract_Start_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_2nd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_3rd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_4th_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Delivered_5th_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Demo_Qualification__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Demo_Unqualified_Reason__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Family__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Save_List__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Saved_Account__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__AutoCreateContactsFromDatahug__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="datahugapps__Domain__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="datahugapps__HugRank__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="32768" name="sk_Biggest_Challenges__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__LastDatahugSyncDate__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__LastInteractedDate__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="sk_Buying_Group_Full_Name__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__LastInteraction__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__Last_Inbound_Interaction__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__Last_Outbound_Interaction__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="datahugapps__Next_Meeting__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="datahugapps__NumberOfColleagues__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="datahugapps__NumberOfContacts__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="datahugapps__NumberofLocations__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="OB__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sk_Lennox_Dealer_Number__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="sk_Lennox_Dealer__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="sk_Tech_Training__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="qbdialer__Dials__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="qbdialer__LastCallTime__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="qbdialer__ResponseTime__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysToOnBoard__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Channel_Program__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage1__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage2__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage3__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="DaysInStage4__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Collections__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Didn_t_Renew__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="1300" name="City_State__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Web_Form_Completed__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Days_Since_Activation__c" nullable="true" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Scheduled_2nd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Address_Same_As_Above__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Invoice_Status_Change__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Demo_Scheduled_3rd_D_T__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IsDeleted"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MasterRecordId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fax"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Website"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Sic"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Industry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AnnualRevenue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NumberOfEmployees"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Description"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OwnerId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SystemModstamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastActivityDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Jigsaw"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JigsawCompanyId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Trial_Activation_Start_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Try_Buy_Activation_Start_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Production_Activation_Start_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lead_Created_On__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Delivered__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Current_Method__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Devices_Notes__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Pain_to_Solve__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decision_Makers__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Service_Industry_Details__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Invoicing_Status__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Average_Number_of_Work_Orders__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Hours_of_Operation__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mobile_Devices__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Time_Zone__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Accounting_Package_ver__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_import_needed__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_service_techs__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_Customers__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_Products__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_currently_defined_tasks__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_back_office_staff__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Invoicing_started__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="First_Purchase_date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Target_Stage_1_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Target_Stage_2_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Target_Stage_3_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Target_Stage_4_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Actual_Stage_1_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Actual_Stage_2_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Actual_Stage_3_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Actual_Stage_4_complete__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_name__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_city__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_state__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_street__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_zip__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Admin_username__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Admin_password__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activation_type__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Admin_contact_name__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Assigned_To__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="At_risk__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Intro_Email_Sent__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activation_Status__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Admin_contact_email__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Admin_contact_phone__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activation_start_date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Budget__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Trial_target_end_date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Referrer_First_Name__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Trial_actual_end_date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="x_Report_Days_to_Stage4__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Reference_Testimonial_Text__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Referenceable_Account__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Reference_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Reference_History__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Competitors__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Other_competitors__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Features_important_to_you__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SE__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OB_Risk_Reason__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Other_important_features__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OB_Risk__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Timeframe__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Will_you_consder_upgrading__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Reference_Comments__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Scheduled_Date_Time__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Referrer_Last_Name__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lost_Customer__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Reason_for_Lost__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Referrer_Phone__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Success_Criteria__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Barriers__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="of_Users_Purchased__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activation_Status_Trial__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activation_Status_PPOC__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Try_Buy_Target_End_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Try_Buy_Actual_End_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Customer_Health_Check_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Customer_Health_Status__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_S_Owner__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Customer_Health_Summary__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="At_Risk_Reason__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="On_Hold__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="On_Hold_Reason__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Pay_by_Credit_Card__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Users_Total__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Users_no_device__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Users_iPhone__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Users_iPad__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Users_Android__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Invoicing_Start_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Contract_Length__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Users_Android_Tablet__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LeadSource__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="External_Web_Source__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mktg_Qualified_By__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mktg_Qualified_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mktg_Qualified_Result__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Sales_Qualified_By__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Sales_Qualified_Result__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Sales_Qualified_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Set_For__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fleet_Size__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Referrer_Email__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FA_Referral_Source__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Sales_Process_Result__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lead_Category__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Contract_Start_Date__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Delivered_2nd_D_T__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Delivered_3rd_D_T__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Delivered_4th_D_T__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Delivered_5th_D_T__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Qualification__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Unqualified_Reason__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Family__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Save_List__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Saved_Account__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__AutoCreateContactsFromDatahug__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__Domain__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__HugRank__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sk_Biggest_Challenges__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__LastDatahugSyncDate__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__LastInteractedDate__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sk_Buying_Group_Full_Name__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__LastInteraction__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__Last_Inbound_Interaction__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__Last_Outbound_Interaction__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__Next_Meeting__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__NumberOfColleagues__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__NumberOfContacts__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datahugapps__NumberofLocations__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OB__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sk_Lennox_Dealer_Number__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sk_Lennox_Dealer__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sk_Tech_Training__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qbdialer__Dials__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qbdialer__LastCallTime__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qbdialer__ResponseTime__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DaysToOnBoard__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Channel_Program__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DaysInStage1__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DaysInStage2__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DaysInStage3__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DaysInStage4__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Collections__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Didn_t_Renew__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="City_State__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Web_Form_Completed__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Days_Since_Activation__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Scheduled_2nd_D_T__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Address_Same_As_Above__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Invoice_Status_Change__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Demo_Scheduled_3rd_D_T__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

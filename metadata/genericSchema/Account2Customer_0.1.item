@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_bz-PEMDKEeOOaqNtHRdzpA" comment="connectionComment" label="connectionLabel" dataPackage="_bz-PEcDKEeOOaqNtHRdzpA"/>
+  <TalendMetadata:GenericPackage xmi:id="_bz-PEcDKEeOOaqNtHRdzpA" dataManager="_bz-PEMDKEeOOaqNtHRdzpA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bz-PEsDKEeOOaqNtHRdzpA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PE8DKEeOOaqNtHRdzpA" name="name" id="1656011" label="name" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bz-PFMDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PFcDKEeOOaqNtHRdzpA" name="email" id="1656012" label="email" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bz-PFsDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PF8DKEeOOaqNtHRdzpA" name="phone" id="1656013" label="phone" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bz-PGMDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PGcDKEeOOaqNtHRdzpA" name="fax" id="1656014" label="fax" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bz-PGsDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PG8DKEeOOaqNtHRdzpA" name="notes" id="1656015" label="notes" talendType="id_String">
+        <initialValue xmi:id="_bz-PHMDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PHcDKEeOOaqNtHRdzpA" name="website" id="1656016" label="website" talendType="id_String">
+        <initialValue xmi:id="_bz-PHsDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PH8DKEeOOaqNtHRdzpA" name="account" id="1656017" label="account" talendType="id_String">
+        <initialValue xmi:id="_bz-PIMDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PIcDKEeOOaqNtHRdzpA" name="glAccount" id="1656018" label="glAccount" talendType="id_String">
+        <initialValue xmi:id="_bz-PIsDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PI8DKEeOOaqNtHRdzpA" name="discount" id="1656019" label="discount" talendType="id_String">
+        <initialValue xmi:id="_bz-PJMDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-PJcDKEeOOaqNtHRdzpA" name="taxable" id="1656020" label="taxable" talendType="id_String">
+        <initialValue xmi:id="_bz-PJsDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-2IMDKEeOOaqNtHRdzpA" name="onHold" id="1656021" label="onHold" talendType="id_String">
+        <initialValue xmi:id="_bz-2IcDKEeOOaqNtHRdzpA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bz-2IsDKEeOOaqNtHRdzpA" name="uuid" id="1656022" label="uuid" talendType="id_String">
+        <initialValue xmi:id="_bz-2I8DKEeOOaqNtHRdzpA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

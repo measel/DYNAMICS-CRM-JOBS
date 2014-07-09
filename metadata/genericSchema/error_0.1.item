@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_XMgNUMDNEeOOaqNtHRdzpA" name="repository.metadataGenericSchema" dataPackage="_XMgNUcDNEeOOaqNtHRdzpA"/>
+  <TalendMetadata:GenericPackage xmi:id="_XMgNUcDNEeOOaqNtHRdzpA" name="repository.metadataGenericSchema" dataManager="_XMgNUMDNEeOOaqNtHRdzpA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XMgNUsDNEeOOaqNtHRdzpA" id="_RdjtgMDNEeOOaqNtHRdzpA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XMgNU8DNEeOOaqNtHRdzpA" name="error" label="error" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XMgNVMDNEeOOaqNtHRdzpA" name="name" label="name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XMgNVcDNEeOOaqNtHRdzpA" name="message" label="message" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

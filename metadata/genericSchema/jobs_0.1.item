@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_TekucMS8EeORspyaFdGAoA" name="repository.metadataGenericSchema" dataPackage="_TekuccS8EeORspyaFdGAoA"/>
+  <TalendMetadata:GenericPackage xmi:id="_TekuccS8EeORspyaFdGAoA" name="repository.metadataGenericSchema" dataManager="_TekucMS8EeORspyaFdGAoA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_TekucsS8EeORspyaFdGAoA" id="_agj1YMS6EeORspyaFdGAoA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Tekuc8S8EeORspyaFdGAoA" name="description" label="description" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TekudMS8EeORspyaFdGAoA" name="scheduledOn" label="scheduledOn" talendType="id_Date" pattern="&quot;dd-MM-yyyy HH:mm:ss"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TekudcS8EeORspyaFdGAoA" name="estDuration" label="estDuration" talendType="id_Integer">
+        <initialValue xmi:id="_TekudsS8EeORspyaFdGAoA" body="60"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Tekud8S8EeORspyaFdGAoA" name="jobLead" comment="uuid" label="jobLead" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_IQxnIMDIEeOOaqNtHRdzpA" name="customer" dataPackage="_IQxnJsDIEeOOaqNtHRdzpA" JSONFilePath="C:/Users/Mike Measel/Json schemas/customer.json" Encoding="UTF-8">
+    <schema xmi:id="_IQxnIcDIEeOOaqNtHRdzpA" LimitBoucle="50" AbsoluteXPathQuery="/root" flag="ROOT">
+      <schemaTargets xmi:id="_IQxnIsDIEeOOaqNtHRdzpA" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="_IQxnI8DIEeOOaqNtHRdzpA" RelativeXPathQuery="email" TagName="email"/>
+      <schemaTargets xmi:id="_IQxnJMDIEeOOaqNtHRdzpA" RelativeXPathQuery="phone" TagName="phone"/>
+      <schemaTargets xmi:id="_IQxnJcDIEeOOaqNtHRdzpA" RelativeXPathQuery="fax" TagName="fax"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_IQxnJsDIEeOOaqNtHRdzpA" name="default" dataManager="_IQxnIMDIEeOOaqNtHRdzpA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IQyOMMDIEeOOaqNtHRdzpA" id="_6oo9gMDHEeOOaqNtHRdzpA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XD5BoMPzEeORqPc9I1etzA" name="customer" label="customer" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Vo31IMPzEeORqPc9I1etzA" label="name" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Vo31IcPzEeORqPc9I1etzA" label="email" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Vo31IsPzEeORqPc9I1etzA" label="phone" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Vo31I8PzEeORqPc9I1etzA" label="fax" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

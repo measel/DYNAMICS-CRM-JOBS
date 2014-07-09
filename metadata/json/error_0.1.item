@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_FgPZIMGMEeOe6NqSZtxW3g" name="error" dataPackage="_FgQAM8GMEeOe6NqSZtxW3g" JSONFilePath="C:/Users/Mike Measel/Json schemas/error.json" Encoding="UTF-8">
+    <schema xmi:id="_FgQAMMGMEeOe6NqSZtxW3g" LimitBoucle="50" AbsoluteXPathQuery="/error">
+      <schemaTargets xmi:id="_FgQAMcGMEeOe6NqSZtxW3g" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="_FgQAMsGMEeOe6NqSZtxW3g" RelativeXPathQuery="message" TagName="message"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_FgQAM8GMEeOe6NqSZtxW3g" name="default" dataManager="_FgPZIMGMEeOe6NqSZtxW3g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_FgQANMGMEeOe6NqSZtxW3g" id="_6y33gMGLEeOe6NqSZtxW3g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FgQANcGMEeOe6NqSZtxW3g" label="name" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FgQANsGMEeOe6NqSZtxW3g" label="message" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_M92vwLwyEeOXP_hHABdnOg" comment="connectionComment" label="connectionLabel" dataPackage="_M92vwbwyEeOXP_hHABdnOg"/>
+  <TalendMetadata:GenericPackage xmi:id="_M92vwbwyEeOXP_hHABdnOg" dataManager="_M92vwLwyEeOXP_hHABdnOg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_M92vwrwyEeOXP_hHABdnOg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M92vw7wyEeOXP_hHABdnOg" name="Fax" id="100" label="Fax" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9394LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9394bwyEeOXP_hHABdnOg" name="SubScribedOn" id="101" label="SubScribedOn" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9394rwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M93947wyEeOXP_hHABdnOg" name="Name" id="102" label="Name" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9395LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9395bwyEeOXP_hHABdnOg" name="ExpiresOn" id="103" label="ExpiresOn" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9395rwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M93957wyEeOXP_hHABdnOg" name="CreatedOn" id="104" label="CreatedOn" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9396LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9396bwyEeOXP_hHABdnOg" name="VatREgistrationNumber" id="105" label="VatREgistrationNumber" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9396rwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M93967wyEeOXP_hHABdnOg" name="Phone" id="106" label="Phone" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9397LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9397bwyEeOXP_hHABdnOg" name="Country" id="107" label="Country" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9397rwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M93977wyEeOXP_hHABdnOg" name="Region" id="108" label="Region" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9398LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9398bwyEeOXP_hHABdnOg" name="PostCode" id="109" label="PostCode" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9398rwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M93987wyEeOXP_hHABdnOg" name="SteetName" id="110" label="SteetName" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9399LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9399bwyEeOXP_hHABdnOg" name="City" id="111" label="City" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M9399rwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M93997wyEeOXP_hHABdnOg" name="Email" id="112" label="Email" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M939-LwyEeOXP_hHABdnOg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M939-bwyEeOXP_hHABdnOg" name="DefaultCurrency" id="113" label="DefaultCurrency" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_M939-rwyEeOXP_hHABdnOg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

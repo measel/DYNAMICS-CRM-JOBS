@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_abPLoMD4EeOOaqNtHRdzpA" name="locationList" dataPackage="_abPLrMD4EeOOaqNtHRdzpA" JSONFilePath="C:/Users/Mike Measel/Json schemas/locationList.json" Encoding="UTF-8">
+    <schema xmi:id="_abPLocD4EeOOaqNtHRdzpA" LimitBoucle="50" AbsoluteXPathQuery="/root" flag="ROOT">
+      <schemaTargets xmi:id="_abPLosD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/name" TagName="name"/>
+      <schemaTargets xmi:id="_abPLo8D4EeOOaqNtHRdzpA" RelativeXPathQuery="items/streetName" TagName="streetName"/>
+      <schemaTargets xmi:id="_abPLpMD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/country" TagName="country"/>
+      <schemaTargets xmi:id="_abPLpcD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/isBilling" TagName="isBilling"/>
+      <schemaTargets xmi:id="_abPLpsD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/href/url" TagName="url"/>
+      <schemaTargets xmi:id="_abPLp8D4EeOOaqNtHRdzpA" RelativeXPathQuery="items/locality" TagName="locality"/>
+      <schemaTargets xmi:id="_abPLqMD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/type" TagName="type"/>
+      <schemaTargets xmi:id="_abPLqcD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/uuid" TagName="uuid"/>
+      <schemaTargets xmi:id="_abPLqsD4EeOOaqNtHRdzpA" RelativeXPathQuery="items/region" TagName="region"/>
+      <schemaTargets xmi:id="_abPLq8D4EeOOaqNtHRdzpA" RelativeXPathQuery="items/postcode" TagName="postcode"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_abPLrMD4EeOOaqNtHRdzpA" name="default" dataManager="_abPLoMD4EeOOaqNtHRdzpA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_abPLrcD4EeOOaqNtHRdzpA" id="_477YsMD2EeOOaqNtHRdzpA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLrsD4EeOOaqNtHRdzpA" label="name" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLr8D4EeOOaqNtHRdzpA" label="streetName" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLsMD4EeOOaqNtHRdzpA" label="country" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLscD4EeOOaqNtHRdzpA" label="isBilling" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLssD4EeOOaqNtHRdzpA" label="url" length="84" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLs8D4EeOOaqNtHRdzpA" label="locality" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLtMD4EeOOaqNtHRdzpA" label="type" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLtcD4EeOOaqNtHRdzpA" label="uuid" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLtsD4EeOOaqNtHRdzpA" label="region" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abPLt8D4EeOOaqNtHRdzpA" label="postcode" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
